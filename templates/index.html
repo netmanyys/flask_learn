@@ -9,7 +9,7 @@
     <h1 style="text-align: center"> Task Master</h1>
     {% if tasks|length < 1 %}
     <h4 style="text-align: center"> There is no task, Create one below!</h4>
-    {% endif %}
+    {% else %}
     <table>
         <tr>
             <th> Task </th>
@@ -28,6 +28,7 @@
             </tr>
         {% endfor %}
     </table>
+    {% endif %}
 
     <div class="form">
         <form action="/" method="POST">
